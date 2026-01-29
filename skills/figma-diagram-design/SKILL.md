@@ -1,5 +1,6 @@
 ---
 name: figma-diagram-design
+version: 1.0.0
 description: Apply professional color theming to Figma diagrams (flowcharts, decision trees, sequence diagrams, state diagrams, gantt charts). Use this skill whenever creating diagrams with the Figma:generate_diagram tool. Automatically assigns distinct colors to top-level branches, with child nodes inheriting their parent branch's color family for clear visual hierarchy.
 ---
 

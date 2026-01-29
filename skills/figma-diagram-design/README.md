@@ -33,3 +33,11 @@ npx skills add stoodiohq/agent-skills --skill figma-diagram-design
 | Other agents | ✅ (outputs Mermaid syntax) |
 
 **Note:** Full diagram generation requires the Figma MCP connector. Without it, agents can still output properly-styled Mermaid syntax for use in other renderers.
+
+## Changelog
+
+### 1.0.0 (2026-01-29)
+- Initial release
+- Hierarchy-based color inheritance for diagram branches
+- 3 curated palettes: Modern Professional, Soft Pastel, Bold Vibrant
+- Support for flowcharts, decision trees, sequence diagrams, state diagrams, gantt charts
