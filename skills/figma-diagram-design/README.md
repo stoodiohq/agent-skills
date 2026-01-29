@@ -36,6 +36,11 @@ npx skills add stoodiohq/agent-skills --skill figma-diagram-design
 
 ## Changelog
 
+### 1.1.0 (2026-01-29)
+- Added URL presentation guidelines to prevent terminal corruption issues
+- Diagram IDs now presented separately from base URL
+- Fixes 404 errors caused by line break corruption in long URLs
+
 ### 1.0.0 (2026-01-29)
 - Initial release
 - Hierarchy-based color inheritance for diagram branches

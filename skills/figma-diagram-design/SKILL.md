@@ -1,6 +1,6 @@
 ---
 name: figma-diagram-design
-version: 1.0.0
+version: 1.1.0
 description: Apply professional color theming to Figma diagrams (flowcharts, decision trees, sequence diagrams, state diagrams, gantt charts). Use this skill whenever creating diagrams with the Figma:generate_diagram tool. Automatically assigns distinct colors to top-level branches, with child nodes inheriting their parent branch's color family for clear visual hierarchy.
 ---
 
@@ -78,6 +78,32 @@ flowchart LR
 3. Generate classDef statements for each branch + neutral
 4. Apply classes to all nodes based on their branch ancestry
 5. Ensure root/shared nodes use neutral styling
+
+## Presenting Diagram URLs
+
+Terminal display can corrupt long Figma URLs when copied. Follow these rules:
+
+### URL Presentation Rules
+
+1. **Provide the diagram ID separately** — on its own line
+2. **Use short URL form** — omit `https://` to reduce length
+3. **Never use markdown links** — `[text](url)` can cause double-prefix issues
+4. **Avoid query parameters** — they add unnecessary length
+
+### Recommended Format
+
+```
+**Diagram ID:** b201b3c8-b2ab-4ed9-a3bc-7e09703db246
+
+**Access your diagram at:**
+figma.com/online-whiteboard/create-diagram/ + the ID above
+```
+
+### If User Reports 404 Error
+
+1. Check for `%0A` or `%20` in their URL (indicates line break corruption)
+2. Provide the diagram ID separately
+3. Have them manually construct the short URL
 
 ## Notes
 
